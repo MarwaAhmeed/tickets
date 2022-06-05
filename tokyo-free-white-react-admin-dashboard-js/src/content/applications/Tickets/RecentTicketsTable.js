@@ -25,6 +25,7 @@ import {
 import Label from 'src/components/Label';
 import EditTwoToneIcon from '@mui/icons-material/EditTwoTone';
 import BulkActions from './BulkActions';
+import InfoIcon from '@mui/icons-material/Info';
 import { useNavigate } from 'react-router';
 
 const getStatusLabel = (ticketStatus) => {
@@ -256,14 +257,14 @@ const RecentTicketsTable = ({ tickets,role }) => {
                     <Tooltip title="Ticket Details" arrow>
                       <IconButton
                         sx={{
-                          '&:hover': { background: theme.colors.error.lighter },
-                          color: theme.palette.error.main
+                          '&:hover': { background: theme.colors.primary.lighter },
+                          color: theme.palette.primary.main
                         }}
                         color="inherit"
                         size="small"
                         onClick={()=>handleTicketDetails(ticket._id)}
                       >
-                        <EditTwoToneIcon fontSize="small" />
+                        <InfoIcon fontSize="small" />
                       </IconButton>
                     </Tooltip>
                   </TableCell>

@@ -31,11 +31,14 @@ export default function EditTicket() {
     dispatch(getTicketDetails(params));
 }, []);
 
-  const [status, setStatus] = useState(ticketDetails?.status);
+  const [status, setStatus] = useState("");
   useEffect(() => {
     console.log(status)
   }, [status]);
 
+  useEffect(() => {
+   setStatus(ticketDetails?.status)
+  }, [ticketDetails]);
   const handleSubmit = async (e) => {
     console.log(status);
 

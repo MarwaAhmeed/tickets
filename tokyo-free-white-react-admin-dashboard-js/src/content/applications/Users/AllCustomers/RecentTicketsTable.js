@@ -160,7 +160,7 @@ const RecentcustomersTable = ({ customers }) => {
                     </Typography>
                   </TableCell>
                   <TableCell>
-                  <Tooltip title="Change Status" arrow>
+                  <Tooltip title="Edit Customer" arrow>
                       <IconButton
                         sx={{
                           '&:hover': {

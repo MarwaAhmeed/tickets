@@ -81,7 +81,7 @@ import { axiosInstance } from "../../network/axios";
       authorization:token ,
     },
   });
-  export const editCustomer = async (id,user,token) =>await axiosInstance.post(`/admin/customer/${id}`, user,{
+  export const editCustomer = async (id,user,token) =>await axiosInstance.patch(`/admin/customer/${id}`, user,{
     headers: {
       authorization:token ,
     },

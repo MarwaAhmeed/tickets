@@ -110,10 +110,17 @@ export default function TicketDetails() {
           </Typography>
         </CardContent>
       </Card>
+      <Box  sx={{
+            marginTop: 8,
+            display: 'flex',
+            justifyContent: 'space-around'
+          }} >
       <Typography variant="h6" component="div" margin={3}>
         Ticket Notes
       </Typography>
       <Button onClick={handleOpen}>Add Note</Button>
+      </Box>
+     
       <Modal
         aria-labelledby="transition-modal-title"
         aria-describedby="transition-modal-description"
